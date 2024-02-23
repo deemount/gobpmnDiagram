@@ -4,4 +4,5 @@ A library for diagrams in Business Process Model Notation
 
 ## Further Links
 
-+ [gobomnModels](https://github.com/deemount/gobpmnModels)
++ [gobpmnModels](https://github.com/deemount/gobpmnModels)
++ [gobpmnBuilder](https://github.com/deemount/gobpmnBuilder)
