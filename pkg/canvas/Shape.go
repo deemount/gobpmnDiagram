@@ -3,7 +3,7 @@ package canvas
 import (
 	"fmt"
 
-	"github.com/deemount/gobpmnDiagram/pkg/impl"
+	"github.com/deemount/gobpmnModels/pkg/impl"
 )
 
 // NewShape ...
@@ -58,7 +58,7 @@ func (shape *Shape) SetIsMarkerVisible(isMarkerVisible bool) {
 	shape.IsMarkerVisible = isMarkerVisible
 }
 
-/*** Make Elements ***/
+/* Elements */
 
 /** DC **/
 

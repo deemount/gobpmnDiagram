@@ -3,7 +3,7 @@ package canvas
 import (
 	"fmt"
 
-	"github.com/deemount/gobpmnDiagram/pkg/impl"
+	"github.com/deemount/gobpmnModels/pkg/impl"
 )
 
 // NewPlane ...
@@ -17,7 +17,7 @@ func NewPlane() PlaneRepository {
 
 /* Attributes */
 
-/** BPMN **/
+/** BPMNDI **/
 
 // SetID ...
 func (plane *Plane) SetID(typ string, suffix interface{}) {
@@ -71,7 +71,7 @@ func (plane *Plane) SetEdge(num int) {
 
 /* Attributes */
 
-/** BPMN **/
+/** BPMNDI **/
 
 // GetID ...
 func (plane Plane) GetID() impl.STR_PTR {
@@ -85,7 +85,7 @@ func (plane Plane) GetElement() impl.STR_PTR {
 
 /* Elements */
 
-/** BPMN **/
+/** BPMNDI **/
 
 // GetShape ...
 func (plane Plane) GetShape(num int) *Shape {

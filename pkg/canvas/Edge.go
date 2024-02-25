@@ -3,7 +3,7 @@ package canvas
 import (
 	"fmt"
 
-	"github.com/deemount/gobpmnDiagram/pkg/impl"
+	"github.com/deemount/gobpmnModels/pkg/impl"
 )
 
 // NewEdge ...
@@ -16,6 +16,8 @@ func NewEdge() EdgeRepository {
  */
 
 /* Attributes */
+
+/** BPMN **/
 
 // SetID ...
 func (edge *Edge) SetID(typ string, suffix interface{}) {
@@ -32,7 +34,7 @@ func (edge *Edge) SetElement(typ string, suffix interface{}) {
 	}
 }
 
-/*** Make Elements ***/
+/* Elements */
 
 /** BPMNDI **/
 
@@ -56,6 +58,8 @@ func (edge *Edge) SetLabel() {
  */
 
 /* Attributes */
+
+/** BPMN **/
 
 // GetID ...
 func (edge Edge) GetID() impl.STR_PTR {

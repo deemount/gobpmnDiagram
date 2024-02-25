@@ -3,7 +3,7 @@ package canvas
 import (
 	"fmt"
 
-	"github.com/deemount/gobpmnDiagram/pkg/impl"
+	"github.com/deemount/gobpmnModels/pkg/impl"
 )
 
 // NewDiagram ...

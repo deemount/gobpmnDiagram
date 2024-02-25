@@ -9,7 +9,7 @@ func NewLabel() LabelRepository {
  * Default Setters
  */
 
-/*** Make Elements ***/
+/* Elements */
 
 /** DC **/
 

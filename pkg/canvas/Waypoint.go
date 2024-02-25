@@ -1,6 +1,6 @@
 package canvas
 
-import "github.com/deemount/gobpmnDiagram/pkg/impl"
+import "github.com/deemount/gobpmnModels/pkg/impl"
 
 // NewWaypoint ...
 func NewWaypoint() WaypointRepository {

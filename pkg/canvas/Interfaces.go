@@ -1,6 +1,20 @@
 package canvas
 
-import "github.com/deemount/gobpmnDiagram/pkg/impl"
+import "github.com/deemount/gobpmnModels/pkg/impl"
+
+/*
+ * @RBase
+ */
+
+// IFBaseCoordinates ...
+type IFBaseCoordinates interface {
+	SetCoordinates(x, y int)
+	GetCoordinates() (impl.INT_PTR, impl.INT_PTR)
+	SetX(x int)
+	GetX() impl.INT_PTR
+	SetY(y int)
+	GetY() impl.INT_PTR
+}
 
 type CanvasBoundsElements interface {
 	SetBounds()
@@ -12,9 +26,13 @@ type CanvasLabelElements interface {
 	GetLabel() *Label
 }
 
+/*
+ * @Repositories
+ */
+
 // BoundsRepository ...
 type BoundsRepository interface {
-	impl.IFBaseCoordinates
+	IFBaseCoordinates
 	SetSize(width, height int)
 	GetSize() (impl.INT_PTR, impl.INT_PTR)
 	SetWidth(width int)
@@ -25,16 +43,14 @@ type BoundsRepository interface {
 
 // WaypointRepository ...
 type WaypointRepository interface {
-	impl.IFBaseCoordinates
+	IFBaseCoordinates
 }
 
 // Diagram ...
 type DiagramRepository interface {
 	impl.IFBaseID
-
 	SetPlane()
 	GetPlane() *Plane
-
 	GetDescription() string
 }
 

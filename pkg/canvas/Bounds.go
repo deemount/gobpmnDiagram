@@ -1,6 +1,6 @@
 package canvas
 
-import "github.com/deemount/gobpmnDiagram/pkg/impl"
+import "github.com/deemount/gobpmnModels/pkg/impl"
 
 // NewBounds ...
 func NewBounds() BoundsRepository {
@@ -10,6 +10,10 @@ func NewBounds() BoundsRepository {
 /*
  * Default Setters
  */
+
+/* Attributes */
+
+/** BPMNDI **/
 
 // SetCoordinates ...
 func (bnds *Bounds) SetCoordinates(x, y int) {
@@ -46,6 +50,10 @@ func (bnds *Bounds) SetHeight(height int) {
 /*
  * Default Getters
  */
+
+/* Attributes */
+
+/** BPMNDI **/
 
 // GetCoordinates ...
 func (bnds Bounds) GetCoordinates() (impl.INT_PTR, impl.INT_PTR) {

@@ -2,6 +2,7 @@ package canvas
 
 import "fmt"
 
+// SetID ...
 func SetID(typ string, suffix interface{}) string {
 	var r string
 	switch typ {
@@ -36,6 +37,31 @@ func SetID(typ string, suffix interface{}) string {
 		break
 	case "startevent":
 		r = fmt.Sprintf("_BPMNShape_StartEvent_%v", suffix)
+		break
+	case "id":
+		r = fmt.Sprintf("%s", suffix)
+		break
+	}
+	return r
+}
+
+func SetElement(typ string, suffix interface{}) string {
+	var r string
+	switch typ {
+	case "activity":
+		r = fmt.Sprintf("Activity_%s", suffix)
+		break
+	case "collaboration":
+		r = fmt.Sprintf("Participant_%s", suffix)
+		break
+	case "event":
+		r = fmt.Sprintf("Event_%s", suffix)
+		break
+	case "participant":
+		r = fmt.Sprintf("Participant_%s", suffix)
+		break
+	case "startevent":
+		r = fmt.Sprintf("StartEvent_%v", suffix)
 		break
 	case "id":
 		r = fmt.Sprintf("%s", suffix)
