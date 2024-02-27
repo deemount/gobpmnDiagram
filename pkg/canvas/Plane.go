@@ -3,7 +3,7 @@ package canvas
 import (
 	"fmt"
 
-	"github.com/deemount/gobpmnModels/pkg/impl"
+	impl "github.com/deemount/gobpmnTypes"
 )
 
 // NewPlane ...
@@ -12,7 +12,7 @@ func NewPlane() PlaneRepository {
 }
 
 /*
- * Default Setters
+ * @Setters
  */
 
 /* Attributes */
@@ -66,7 +66,7 @@ func (plane *Plane) SetEdge(num int) {
 }
 
 /*
- * Default Getters
+ * @Getters
  */
 
 /* Attributes */

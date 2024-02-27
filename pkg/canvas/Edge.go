@@ -3,7 +3,7 @@ package canvas
 import (
 	"fmt"
 
-	"github.com/deemount/gobpmnModels/pkg/impl"
+	impl "github.com/deemount/gobpmnTypes"
 )
 
 // NewEdge ...
@@ -12,7 +12,7 @@ func NewEdge() EdgeRepository {
 }
 
 /*
- * Default Setters
+ * @Setters
  */
 
 /* Attributes */
@@ -54,7 +54,7 @@ func (edge *Edge) SetLabel() {
 }
 
 /*
- * Default Getters
+ * @Getters
  */
 
 /* Attributes */

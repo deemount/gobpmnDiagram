@@ -6,7 +6,7 @@ func NewLabel() LabelRepository {
 }
 
 /*
- * Default Setters
+ * @Setters
  */
 
 /* Elements */
@@ -19,7 +19,7 @@ func (label *Label) SetBounds() {
 }
 
 /*
- * Default Getters
+ * @Getters
  */
 
 /* Elements */

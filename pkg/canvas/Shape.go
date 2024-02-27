@@ -3,7 +3,7 @@ package canvas
 import (
 	"fmt"
 
-	"github.com/deemount/gobpmnModels/pkg/impl"
+	impl "github.com/deemount/gobpmnTypes"
 )
 
 // NewShape ...
@@ -12,7 +12,7 @@ func NewShape() ShapeRepository {
 }
 
 /*
- * Default Setters
+ * @Setters
  */
 
 /* Attributes */
@@ -75,7 +75,7 @@ func (shape *Shape) SetLabel() {
 }
 
 /*
- * Default Getters
+ * @Getters
  */
 
 /* Attributes */

@@ -1,6 +1,6 @@
 package canvas
 
-import "github.com/deemount/gobpmnModels/pkg/impl"
+import impl "github.com/deemount/gobpmnTypes"
 
 // NewBounds ...
 func NewBounds() BoundsRepository {
@@ -8,7 +8,7 @@ func NewBounds() BoundsRepository {
 }
 
 /*
- * Default Setters
+ * @Setters
  */
 
 /* Attributes */
@@ -48,7 +48,7 @@ func (bnds *Bounds) SetHeight(height int) {
 }
 
 /*
- * Default Getters
+ * @Getters
  */
 
 /* Attributes */

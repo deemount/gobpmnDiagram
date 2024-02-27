@@ -1,6 +1,6 @@
 package canvas
 
-import "github.com/deemount/gobpmnModels/pkg/impl"
+import impl "github.com/deemount/gobpmnTypes"
 
 // NewWaypoint ...
 func NewWaypoint() WaypointRepository {
@@ -8,7 +8,7 @@ func NewWaypoint() WaypointRepository {
 }
 
 /*
- * Default Setters
+ * @Setters
  */
 
 /* Attributes */
@@ -30,7 +30,7 @@ func (wp *Waypoint) SetCoordinates(x, y int) {
 }
 
 /*
- * Default Getters
+ * @Getters
  */
 
 /* Attributes */

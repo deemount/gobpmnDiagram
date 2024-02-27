@@ -3,7 +3,7 @@ package canvas
 import (
 	"fmt"
 
-	"github.com/deemount/gobpmnModels/pkg/impl"
+	impl "github.com/deemount/gobpmnTypes"
 )
 
 // NewDiagram ...
@@ -12,7 +12,7 @@ func NewDiagram() DiagramRepository {
 }
 
 /*
- * Default Setters
+ * @Setters
  */
 
 /* Attributes */
@@ -32,8 +32,8 @@ func (diagram *Diagram) SetPlane() {
 	diagram.Plane = make([]Plane, 1)
 }
 
-/**
- * Default Getters
+/*
+ * @Getters
  */
 
 /* Attributes */
@@ -45,7 +45,7 @@ func (diagram Diagram) GetID() impl.STR_PTR {
 
 /* Elements */
 
-/** BPMN **/
+/** BPMNDI **/
 
 // GetPlane ...
 func (diagram Diagram) GetPlane() *Plane {
