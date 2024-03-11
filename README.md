@@ -6,7 +6,7 @@ A library for diagrams in Business Process Model Notation
 
 ## Wiki
 
-There's actually no wiki for this repository installed ...
+The [documentation](https://github.com/deemount/gobpmnDiagram/wiki) is now written in the wiki of the respective module
 
 **Start here** [gobpmn](https://github.com/deemount/gobpmn)
 
@@ -18,8 +18,10 @@ You can also test the idea behind it directly. Simply follow the link to the lab
 
 ## Modules
 
++ [gobpmnTypes](https://github.com/deemount/gobpmnTypes)
 + [gobpmnModels](https://github.com/deemount/gobpmnModels)
 + [gobpmnCamunda](https://github.com/deemount/gobpmnCamunda)
 + [gobpmnBuilder](https://github.com/deemount/gobpmnBuilder)
++ [gobpmnCounter](https://github.com/deemount/gobpmnCounter)
++ [gobpmnHash](https://github.com/deemount/gobpmnHash)
 + [gobpmnReflection](https://github.com/deemount/gobpmnReflection)
-+ [gobpmnTypes](https://github.com/deemount/gobpmnTypes)
