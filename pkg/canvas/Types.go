@@ -1,5 +1,9 @@
 package canvas
 
+/*
+ * @Slices
+ */
+
 type BOUNDS_SLC []Bounds
 type DIAGRAM_SLC []Diagram
 type EDGE_SLC []Edge
@@ -13,11 +17,3 @@ type TEDGE_SLC []TEdge
 type TLABEL_SLC []TLabel
 type TPLANE_SLC []TPlane
 type TSHAPE_SLC []TShape
-
-type BOUNDS_PTR *Bounds
-type DIAGRAM_PTR *Diagram
-type EDGE_PTR *Edge
-type LABEL_PTR *Label
-type PLANE_PTR *Plane
-type SHAPE_PTR *Shape
-type WAYPOINT_PTR *Waypoint

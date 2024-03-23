@@ -8,7 +8,7 @@ var (
 )
 
 /*
- * Default Setters
+ * @Setters
  */
 
 /* Elements */
@@ -21,7 +21,7 @@ func (definitions *Definitions) SetDiagram(num int) {
 }
 
 /*
- * Default Getters
+ * @Getters
  */
 
 /* Elements */
@@ -29,6 +29,6 @@ func (definitions *Definitions) SetDiagram(num int) {
 /** BPMNDI **/
 
 // SetDiagram ...
-func (definitions Definitions) GetDiagram(num int) canvas.DIAGRAM_PTR {
+func (definitions Definitions) GetDiagram(num int) *canvas.Diagram {
 	return &definitions.Diagram[num]
 }
