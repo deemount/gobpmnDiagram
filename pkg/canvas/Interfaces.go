@@ -51,7 +51,6 @@ type DiagramRepository interface {
 	impl.IFBaseID
 	SetPlane()
 	GetPlane() *Plane
-	GetDescription() string
 }
 
 // Edge ...

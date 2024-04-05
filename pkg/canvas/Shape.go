@@ -21,30 +21,37 @@ func NewShape() ShapeRepository {
 
 // SetID ...
 func (shape *Shape) SetID(typ string, suffix interface{}) {
-	shape.ID = SetID(typ, suffix)
+	switch typ {
+	case activity:
+		shape.ID = fmt.Sprintf("Activity_%s_di", suffix)
+	case collaboration:
+		shape.ID = fmt.Sprintf("Participant_%s_di", suffix)
+	case event:
+		shape.ID = fmt.Sprintf("Event_%s_di", suffix)
+	case participant:
+		shape.ID = fmt.Sprintf("Participant_%s_di", suffix)
+	case startEvent:
+		shape.ID = fmt.Sprintf("_BPMNShape_StartEvent_%v", suffix)
+	case ID:
+		shape.ID = fmt.Sprintf("%s_di", suffix)
+	}
 }
 
 // SetElement ...
 func (shape *Shape) SetElement(typ string, suffix interface{}) {
 	switch typ {
-	case "activity":
+	case activity:
 		shape.Element = fmt.Sprintf("Activity_%s", suffix)
-		break
-	case "collaboration":
+	case collaboration:
 		shape.Element = fmt.Sprintf("Participant_%s", suffix)
-		break
-	case "event":
+	case event:
 		shape.Element = fmt.Sprintf("Event_%s", suffix)
-		break
-	case "participant":
+	case participant:
 		shape.Element = fmt.Sprintf("Participant_%s", suffix)
-		break
-	case "startevent":
+	case startEvent:
 		shape.Element = fmt.Sprintf("StartEvent_%v", suffix)
-		break
-	case "id":
+	case ID:
 		shape.Element = fmt.Sprintf("%s", suffix)
-		break
 	}
 }
 

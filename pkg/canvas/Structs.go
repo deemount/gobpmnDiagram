@@ -20,16 +20,14 @@ type Waypoint struct {
 
 // Diagram ...
 type Diagram struct {
-	ID          string    `xml:"id,attr" json:"id,omitempty"`
-	Description string    `xml:"-" json:"-"`
-	Plane       PLANE_SLC `xml:"bpmndi:BPMNPlane,omitempty" json:"plane,omitempty"`
+	ID    string    `xml:"id,attr" json:"id,omitempty"`
+	Plane PLANE_SLC `xml:"bpmndi:BPMNPlane,omitempty" json:"plane,omitempty"`
 }
 
 // TDiagram ...
 type TDiagram struct {
-	ID          string     `xml:"id,attr" json:"id,omitempty"`
-	Description string     `xml:"-" json:"-"`
-	Plane       TPLANE_SLC `xml:"BPMNPlane,omitempty" json:"plane,omitempty"`
+	ID    string     `xml:"id,attr" json:"id,omitempty"`
+	Plane TPLANE_SLC `xml:"BPMNPlane,omitempty" json:"plane,omitempty"`
 }
 
 // Edge ...

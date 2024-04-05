@@ -7,11 +7,28 @@ var (
 	schemaOMGDI  = "http://www.omg.org/spec/DD/20100524/DI"
 )
 
+// NewDefinitions ...
+func NewDefinitions() DefinitionsRepository {
+	return &Definitions{}
+}
+
 /*
  * @Setters
  */
 
 /* Elements */
+
+/** BPMN **/
+
+// SetBpmnDI ...
+func (definitions *Definitions) SetBpmnDI() {
+	definitions.BpmnDI = schemaBpmnDI
+}
+
+// SetOmgDI ...
+func (definitions *Definitions) SetOmgDI() {
+	definitions.OmgDI = schemaOMGDI
+}
 
 /** BPMNDI **/
 

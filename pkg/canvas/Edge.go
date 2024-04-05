@@ -21,7 +21,12 @@ func NewEdge() EdgeRepository {
 
 // SetID ...
 func (edge *Edge) SetID(typ string, suffix interface{}) {
-	edge.ID = SetID(typ, suffix)
+	switch typ {
+	case "association":
+		edge.ID = fmt.Sprintf("Association_%s_di", suffix)
+	case "flow":
+		edge.ID = fmt.Sprintf("Flow_%s_di", suffix)
+	}
 }
 
 // SetElement ...

@@ -21,7 +21,12 @@ func NewPlane() PlaneRepository {
 
 // SetID ...
 func (plane *Plane) SetID(typ string, suffix interface{}) {
-	plane.ID = SetID(typ, suffix)
+	switch typ {
+	case "plane":
+		plane.ID = fmt.Sprintf("BPMNPlane_%d", suffix)
+	case "id":
+		plane.ID = fmt.Sprintf("%s", suffix)
+	}
 }
 
 // SetElement ...
@@ -29,13 +34,10 @@ func (plane *Plane) SetElement(typ string, suffix interface{}) {
 	switch typ {
 	case "process":
 		plane.Element = fmt.Sprintf("Process_%s", suffix)
-		break
 	case "collaboration":
 		plane.Element = fmt.Sprintf("Collaboration_%s", suffix)
-		break
 	case "id":
 		plane.Element = fmt.Sprintf("%s", suffix)
-		break
 	}
 }
 
